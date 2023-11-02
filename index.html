@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -12,24 +13,23 @@
     <script type="module" src="./js/main.js" defer></script>
 </head>
 <body>
-    <section>
-        <main>
-            <div class="questions">
-                <span class="question">BLA BLA BLA</span>
-            </div>
-            <div class="answers">
-                <button class="answerButton">a</button>
-                <button class="answerButton">b</button>
-                <button class="answerButton">c</button>
-                <button class="answerButton">d</button>
-            </div>
-        </main>
-    </section>
+    <img src="./assets/flu.png" alt="Escudo do Fluminense">
+    <main>
+        <div class="questions">
+            <span class="question">BLA BLA BLA</span>
+        </div>
+        <div class="answers">
+            <button class="answerButton">a</button>
+            <button class="answerButton">b</button>
+            <button class="answerButton">c</button>
+            <button class="answerButton">d</button>
+        </div>
+    </main>
 
-    <div class="modal-wrapper-start">
+    <div class="modal-wrapper-start open">
         <div class="modal-start">
             <h1>Bem vindo ao Quiz do nosso Fluzão!</h1>
-            <p>Acerte todas as questões e desbloqueie um super prêmio no final!</p>
+            <p>Acerte todas as questões sobre a libertadores 2023 e desbloqueie um super prêmio no final!</p>
 
             <button id="startButton">INICIAR</button>
         </div>
@@ -41,8 +41,25 @@
             <p id="resultSubTitle">Sua recompensa está logo abaixo:</p>
 
             <div class="video-winner">
-                <video src="#"></video>
+                <video controls src="./assets/videoJoao.mp4"></video>
             </div>
+
+            <div class="tryAgainButton">
+                <a class="tryAgain" href="./index.html">Tentar Novamente</a>
+            </div>
+            <a class="closeModal" href="./index.html">
+                <i class="ph-bold ph-x-circle"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="modal-wrapper-check-answer">
+        <div class="modal-check-answer">
+            <h3 class="checkedAnswer">Correta</h3>
+
+            <button class="closeModalAnswer">
+                <i class="ph-bold ph-x"></i>
+            </button>
         </div>
     </div>
 </body>
