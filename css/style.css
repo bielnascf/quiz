@@ -1,0 +1,152 @@
+body {
+    background-color: #015835;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #0000008c;
+    overflow: hidden;
+}
+
+.questions {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 1px solid #000;
+    background-color: #ffffff;
+}
+
+.questions span {
+    width: 80%;
+    text-align: center;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+
+    background-color: #6e0a24;
+}
+
+.answers button {
+    padding: 0.5rem;
+    width: 50%;
+
+    border-radius: 5px;
+    border: none;
+
+    cursor: pointer;
+}
+
+.answers button:hover {
+    background-color: #d8d8d8;
+}
+
+.modal-wrapper-start.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-wrapper-start {
+    position: absolute;
+    inset: 0;
+    background-color: #000000f5;
+
+    opacity: 0;
+    visibility: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.modal-start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    padding: 3rem;
+
+    border-radius: 50%;
+
+    background-color: #fff;
+    color: #6e0a24;
+}
+
+.modal-start button {
+    width: 50%;
+    padding: 10px;
+
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #6e0a24;
+
+    cursor: pointer;
+}
+
+.modal-start button:hover {
+    background-color: #850000;
+}
+
+.modal-wrapper-result.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-wrapper-result {
+    position: absolute;
+    inset: 0;
+    background-color: #000000f5;
+
+    opacity: 0;
+    visibility: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.modal-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    padding: 3rem;
+
+    background-color: #fff;
+    color: #6e0a24;
+}
+
+.video-winner {
+    border: 1px solid #000;
+    border-radius: 5px;
+
+    overflow: hidden;
+}
