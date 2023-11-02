@@ -30,6 +30,8 @@ let correctCount = 0
 startButton.addEventListener('click', () => {
     modalWrapperStart.classList.remove('open')
     question1()
+    hinoDoFluminense.play()
+    hinoDoFluminense.loop()
 })
 
 function question1() {
