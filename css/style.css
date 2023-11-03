@@ -63,6 +63,12 @@ main {
     border: none;
 
     cursor: pointer;
+
+    transition: background .2s ease-in-out;
+}
+
+.answers button:hover {
+    background-color: #c2abab;
 }
 
 .modal-wrapper-start.open,
@@ -161,12 +167,12 @@ main {
     }
 }
 
-.video-winner video {
+/* .video-winner video {
     width: 100%;
     height: 100%;
     border: 1px solid #000;
     border-radius: 5px;
-}
+} */
 
 .tryAgainButton {
     opacity: 0;
