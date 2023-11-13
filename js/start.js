@@ -115,7 +115,7 @@ function question4() {
                 correctCount++
                 correctAnswer(answer)
             }
-            if(correctCount >= 3) {
+            if(correctCount >= 4) {
                 showReward()
             } else {
                 tryAgain()
